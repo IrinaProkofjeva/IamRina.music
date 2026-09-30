@@ -1,14 +1,380 @@
+```html
 <!DOCTYPE html>
-<html lang="et">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I am Rina</title>
+
+    <title>I AM RINA | Official Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <h1>Hello my Fans</h1>
-    <p></p>
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            I AM <span>RINA</span>
+        </a>
+
+        <button class="menu-button" id="menuButton" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- ================= SIDE MENU ================= -->
+
+    <nav class="side-menu" id="sideMenu">
+
+        <div class="menu-title">
+            <span>MENU</span>
+        </div>
+
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#music">MUSIC</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#events">EVENTS</a>
+        <a href="#contact">CONTACT</a>
+
+        <div class="menu-socials">
+            <a href="#" target="_blank">INSTAGRAM</a>
+            <a href="#" target="_blank">YOUTUBE</a>
+            <a href="#" target="_blank">TIKTOK</a>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= OVERLAY ================= -->
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    OFFICIAL WEBSITE
+                </p>
+
+                <h1>
+                    I AM<br>
+                    <span>RINA</span>
+                </h1>
+
+                <p class="hero-description">
+                    SINGER • PERFORMER • ARTIST
+                </p>
+
+                <a href="#music" class="hero-button">
+                    DISCOVER MY MUSIC
+                </a>
+
+            </div>
+
+            <div class="scroll-down">
+                SCROLL
+                <span>↓</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about" id="about">
+
+            <div class="section-number">
+                01
+            </div>
+
+            <div class="section-content">
+
+                <p class="red-label">
+                    WHO IS RINA?
+                </p>
+
+                <h2>
+                    MORE THAN<br>
+                    <span>A VOICE.</span>
+                </h2>
+
+                <p class="about-text">
+                    Music is not just something I do.
+                    It is the way I express myself, tell stories
+                    and connect with people.
+                </p>
+
+                <p class="about-text">
+                    Welcome to my world.
+                    This is <strong>I AM RINA.</strong>
+                </p>
+
+                <a href="#contact" class="text-button">
+                    WORK WITH ME →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MUSIC ================= -->
+
+        <section class="section music" id="music">
+
+            <div class="section-number">
+                02
+            </div>
+
+            <div class="section-content">
+
+                <p class="red-label">
+                    MY SOUND
+                </p>
+
+                <h2>
+                    FEEL THE<br>
+                    <span>MUSIC.</span>
+                </h2>
+
+                <div class="music-card">
+
+                    <div class="album-cover">
+                        <div class="vinyl"></div>
+                    </div>
+
+                    <div class="music-info">
+
+                        <p class="music-label">
+                            LATEST RELEASE
+                        </p>
+
+                        <h3>
+                            YOUR SONG TITLE
+                        </h3>
+
+                        <p>
+                            RINA
+                        </p>
+
+                        <div class="music-player">
+
+                            <button id="playButton">
+                                ▶
+                            </button>
+
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+
+                            <span>
+                                03:24
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="section gallery" id="gallery">
+
+            <div class="section-number">
+                03
+            </div>
+
+            <div class="section-content">
+
+                <p class="red-label">
+                    VISUALS
+                </p>
+
+                <h2>
+                    ON<br>
+                    <span>STAGE.</span>
+                </h2>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item item-large">
+                        <div class="placeholder">
+                            RINA
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="placeholder">
+                            LIVE
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="placeholder">
+                            MUSIC
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="placeholder">
+                            SHOW
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EVENTS ================= -->
+
+        <section class="section events" id="events">
+
+            <div class="section-number">
+                04
+            </div>
+
+            <div class="section-content">
+
+                <p class="red-label">
+                    LIVE
+                </p>
+
+                <h2>
+                    UPCOMING<br>
+                    <span>SHOWS.</span>
+                </h2>
+
+                <div class="event">
+
+                    <div class="event-date">
+                        <strong>24</strong>
+                        <span>OCT</span>
+                    </div>
+
+                    <div class="event-info">
+                        <h3>LIVE PERFORMANCE</h3>
+                        <p>TALLINN, ESTONIA</p>
+                    </div>
+
+                    <a href="#" class="event-button">
+                        DETAILS
+                    </a>
+
+                </div>
+
+                <div class="event">
+
+                    <div class="event-date">
+                        <strong>08</strong>
+                        <span>NOV</span>
+                    </div>
+
+                    <div class="event-info">
+                        <h3>ACOUSTIC NIGHT</h3>
+                        <p>TALLINN, ESTONIA</p>
+                    </div>
+
+                    <a href="#" class="event-button">
+                        DETAILS
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section contact" id="contact">
+
+            <div class="section-number">
+                05
+            </div>
+
+            <div class="section-content">
+
+                <p class="red-label">
+                    LET'S WORK TOGETHER
+                </p>
+
+                <h2>
+                    BOOK<br>
+                    <span>RINA.</span>
+                </h2>
+
+                <p class="contact-text">
+                    For bookings, collaborations, events
+                    and other business inquiries:
+                </p>
+
+                <a href="mailto:booking@iamrina.com" class="email">
+                    BOOKING@IAMRINA.COM
+                </a>
+
+                <div class="social-links">
+
+                    <a href="#">INSTAGRAM</a>
+                    <a href="#">YOUTUBE</a>
+                    <a href="#">TIKTOK</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            I AM <span>RINA</span>
+        </div>
+
+        <p>
+            © 2026 I AM RINA. ALL RIGHTS RESERVED.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
+```
