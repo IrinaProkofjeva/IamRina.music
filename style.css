@@ -1,0 +1,354 @@
+```css
+/* =========================================
+   I AM RINA
+   RED / BLACK ARTIST WEBSITE
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    padding: 0 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 1000;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.9),
+        transparent
+    );
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #e00000;
+}
+
+
+/* =========================================
+   HAMBURGER
+========================================= */
+
+.menu-button {
+    width: 55px;
+    height: 55px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.menu-button:hover {
+    background: #d60000;
+    border-color: #d60000;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 25px;
+    height: 2px;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+.menu-button.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.menu-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-button.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+
+/* =========================================
+   SIDE MENU
+========================================= */
+
+.side-menu {
+    position: fixed;
+
+    top: 0;
+    right: -420px;
+
+    width: 420px;
+    height: 100vh;
+
+    background: #080808;
+
+    border-left: 2px solid #b00000;
+
+    padding: 120px 60px 40px;
+
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: right 0.45s cubic-bezier(.77,0,.18,1);
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+.menu-title {
+    color: #d00000;
+
+    font-size: 12px;
+    letter-spacing: 5px;
+
+    margin-bottom: 45px;
+}
+
+.side-menu > a {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 48px;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+
+    transition: 0.3s;
+}
+
+.side-menu > a:hover {
+    color: #e00000;
+    transform: translateX(10px);
+}
+
+.menu-socials {
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+}
+
+.menu-socials a:hover {
+    color: #e00000;
+}
+
+.menu-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.75);
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 998;
+
+    transition: 0.3s;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 10%;
+    
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(150,0,0,0.45),
+            transparent 35%
+        ),
+        linear-gradient(
+            90deg,
+            #050505 20%,
+            #120000 100%
+        );
+
+    z-index: -1;
+}
+
+.hero-background::after {
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    right: -200px;
+    top: 20%;
+
+    border-radius: 50%;
+
+    background: #7a0000;
+
+    filter: blur(150px);
+
+    opacity: 0.4;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-small {
+    color: #e00000;
+
+    font-size: 12px;
+    letter-spacing: 7px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: clamp(100px, 17vw, 240px);
+
+    line-height: 0.78;
+
+    letter-spacing: 5px;
+}
+
+.hero h1 span {
+    color: #e00000;
+}
+
+.hero-description {
+    margin-top: 35px;
+
+    letter-spacing: 8px;
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 45px;
+
+    padding: 18px 32px;
+
+    border: 1px solid #e00000;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #e00000;
+}
+
+.scroll-down {
+    position: absolute;
+
+    bottom: 40px;
+    left: 50px;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #777;
+}
+
+.scroll-down span {
+    color: #e00000;
+
+    font-size: 20px;
+
+    display: block;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+```
