@@ -1,378 +1,282 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
 
     <title>I AM RINA | Official Website</title>
+    <meta name="description" content="Enter the musical world of Rina. Discover music, performances and upcoming shows.">
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-
-    <!-- ================= HEADER ================= -->
+    <div class="music-background" id="musicBackground" aria-hidden="true"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
 
     <header class="header">
+        <a href="#home" class="logo">I AM <span>RINA</span><i>.</i></a>
 
-        <a href="#home" class="logo">
-            I AM <span>RINA</span>
-        </a>
-
-        <button class="menu-button" id="menuButton" aria-label="Open menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
+        <div class="header-right">
+            <span class="header-status"><span class="status-dot"></span> OFFICIAL ARTIST PAGE</span>
+            <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
-
-
-    <!-- ================= SIDE MENU ================= -->
-
-    <nav class="side-menu" id="sideMenu">
-
-        <div class="menu-title">
-            <span>MENU</span>
-        </div>
-
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#music">MUSIC</a>
-        <a href="#gallery">GALLERY</a>
-        <a href="#events">EVENTS</a>
-        <a href="#contact">CONTACT</a>
-
-        <div class="menu-socials">
-            <a href="#" target="_blank">INSTAGRAM</a>
-            <a href="#" target="_blank">YOUTUBE</a>
-            <a href="#" target="_blank">TIKTOK</a>
-        </div>
-
-    </nav>
-
-
-    <!-- ================= OVERLAY ================= -->
 
     <div class="menu-overlay" id="menuOverlay"></div>
 
-
-    <!-- ================= HERO ================= -->
-
-    <main>
-
-        <section class="hero" id="home">
-
-            <div class="hero-background"></div>
-
-            <div class="hero-content">
-
-                <p class="hero-small">
-                    OFFICIAL WEBSITE
-                </p>
-
-                <h1>
-                    I AM<br>
-                    <span>RINA</span>
-                </h1>
-
-                <p class="hero-description">
-                    SINGER • PERFORMER • ARTIST
-                </p>
-
-                <a href="#music" class="hero-button">
-                    DISCOVER MY MUSIC
-                </a>
-
-            </div>
-
-            <div class="scroll-down">
-                SCROLL
-                <span>↓</span>
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section class="section about" id="about">
-
-            <div class="section-number">
-                01
-            </div>
-
-            <div class="section-content">
-
-                <p class="red-label">
-                    WHO IS RINA?
-                </p>
-
-                <h2>
-                    MORE THAN<br>
-                    <span>A VOICE.</span>
-                </h2>
-
-                <p class="about-text">
-                    Music is not just something I do.
-                    It is the way I express myself, tell stories
-                    and connect with people.
-                </p>
-
-                <p class="about-text">
-                    Welcome to my world.
-                    This is <strong>I AM RINA.</strong>
-                </p>
-
-                <a href="#contact" class="text-button">
-                    WORK WITH ME →
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= MUSIC ================= -->
-
-        <section class="section music" id="music">
-
-            <div class="section-number">
-                02
-            </div>
-
-            <div class="section-content">
-
-                <p class="red-label">
-                    MY SOUND
-                </p>
-
-                <h2>
-                    FEEL THE<br>
-                    <span>MUSIC.</span>
-                </h2>
-
-                <div class="music-card">
-
-                    <div class="album-cover">
-                        <div class="vinyl"></div>
-                    </div>
-
-                    <div class="music-info">
-
-                        <p class="music-label">
-                            LATEST RELEASE
-                        </p>
-
-                        <h3>
-                            YOUR SONG TITLE
-                        </h3>
-
-                        <p>
-                            RINA
-                        </p>
-
-                        <div class="music-player">
-
-                            <button id="playButton">
-                                ▶
-                            </button>
-
-                            <div class="progress">
-                                <div class="progress-bar"></div>
-                            </div>
-
-                            <span>
-                                03:24
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= GALLERY ================= -->
-
-        <section class="section gallery" id="gallery">
-
-            <div class="section-number">
-                03
-            </div>
-
-            <div class="section-content">
-
-                <p class="red-label">
-                    VISUALS
-                </p>
-
-                <h2>
-                    ON<br>
-                    <span>STAGE.</span>
-                </h2>
-
-                <div class="gallery-grid">
-
-                    <div class="gallery-item item-large">
-                        <div class="placeholder">
-                            RINA
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="placeholder">
-                            LIVE
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="placeholder">
-                            MUSIC
-                        </div>
-                    </div>
-
-                    <div class="gallery-item">
-                        <div class="placeholder">
-                            SHOW
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= EVENTS ================= -->
-
-        <section class="section events" id="events">
-
-            <div class="section-number">
-                04
-            </div>
-
-            <div class="section-content">
-
-                <p class="red-label">
-                    LIVE
-                </p>
-
-                <h2>
-                    UPCOMING<br>
-                    <span>SHOWS.</span>
-                </h2>
-
-                <div class="event">
-
-                    <div class="event-date">
-                        <strong>24</strong>
-                        <span>OCT</span>
-                    </div>
-
-                    <div class="event-info">
-                        <h3>LIVE PERFORMANCE</h3>
-                        <p>TALLINN, ESTONIA</p>
-                    </div>
-
-                    <a href="#" class="event-button">
-                        DETAILS
-                    </a>
-
-                </div>
-
-                <div class="event">
-
-                    <div class="event-date">
-                        <strong>08</strong>
-                        <span>NOV</span>
-                    </div>
-
-                    <div class="event-info">
-                        <h3>ACOUSTIC NIGHT</h3>
-                        <p>TALLINN, ESTONIA</p>
-                    </div>
-
-                    <a href="#" class="event-button">
-                        DETAILS
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section class="section contact" id="contact">
-
-            <div class="section-number">
-                05
-            </div>
-
-            <div class="section-content">
-
-                <p class="red-label">
-                    LET'S WORK TOGETHER
-                </p>
-
-                <h2>
-                    BOOK<br>
-                    <span>RINA.</span>
-                </h2>
-
-                <p class="contact-text">
-                    For bookings, collaborations, events
-                    and other business inquiries:
-                </p>
-
-                <a href="mailto:booking@iamrina.com" class="email">
-                    BOOKING@IAMRINA.COM
-                </a>
-
-                <div class="social-links">
-
-                    <a href="#">INSTAGRAM</a>
-                    <a href="#">YOUTUBE</a>
-                    <a href="#">TIKTOK</a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="footer-logo">
-            I AM <span>RINA</span>
+    <nav class="side-menu" id="sideMenu" aria-label="Main navigation" aria-hidden="true">
+        <div class="menu-top">
+            <span>EXPLORE</span>
+            <button id="closeMenu" aria-label="Close navigation">×</button>
         </div>
 
-        <p>
-            © 2026 I AM RINA. ALL RIGHTS RESERVED.
-        </p>
+        <div class="menu-links">
+            <a href="#home"><small>01</small> HOME <span>↗</span></a>
+            <a href="#about"><small>02</small> ABOUT <span>↗</span></a>
+            <a href="#music"><small>03</small> MUSIC <span>↗</span></a>
+            <a href="#gallery"><small>04</small> GALLERY <span>↗</span></a>
+            <a href="#events"><small>05</small> EVENTS <span>↗</span></a>
+            <a href="#contact"><small>06</small> CONTACT <span>↗</span></a>
+        </div>
 
+        <div class="menu-footer">
+            <span>FOLLOW THE SOUND</span>
+            <div>
+                <a href="#" target="_blank" rel="noopener">INSTAGRAM ↗</a>
+                <a href="#" target="_blank" rel="noopener">YOUTUBE ↗</a>
+                <a href="#" target="_blank" rel="noopener">TIKTOK ↗</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-glow"></div>
+            <div class="hero-ring"></div>
+
+            <div class="hero-content">
+                <div class="eyebrow"><span></span> WELCOME TO MY WORLD</div>
+
+                <h1>I AM <span>RINA</span><b>.</b></h1>
+
+                <p class="hero-description">
+                    A VOICE. A FEELING. <span>A MOMENT.</span>
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#music" class="button-primary">DISCOVER MY MUSIC <span>↗</span></a>
+                    <a href="#about" class="button-text">GET TO KNOW ME <span>↓</span></a>
+                </div>
+            </div>
+
+            <div class="hero-side-text">MUSIC IS MY UNIVERSE — EST. 2026</div>
+
+            <div class="hero-bottom">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-line"></div>
+                <span class="hero-bottom-right">INDEPENDENT SPIRIT. ORIGINAL SOUND.</span>
+            </div>
+        </section>
+
+        <div class="ticker" aria-label="Music is a feeling">
+            <div class="ticker-track">
+                <span>MUSIC IS A FEELING <b>✳</b> LIVE WITHOUT LIMITS <b>✳</b> FEEL EVERY NOTE <b>✳</b> MUSIC IS A FEELING <b>✳</b> LIVE WITHOUT LIMITS <b>✳</b> FEEL EVERY NOTE <b>✳</b></span>
+                <span aria-hidden="true">MUSIC IS A FEELING <b>✳</b> LIVE WITHOUT LIMITS <b>✳</b> FEEL EVERY NOTE <b>✳</b> MUSIC IS A FEELING <b>✳</b> LIVE WITHOUT LIMITS <b>✳</b> FEEL EVERY NOTE <b>✳</b></span>
+            </div>
+        </div>
+
+        <section class="section about" id="about">
+            <div class="section-heading">
+                <span class="section-index">01 / THE ARTIST</span>
+                <span class="section-decoration">✳</span>
+            </div>
+
+            <div class="about-layout">
+                <div class="about-visual">
+                    <div class="about-orbit orbit-one"></div>
+                    <div class="about-orbit orbit-two"></div>
+                    <div class="about-monogram">R<span>.</span></div>
+                    <span class="visual-caption">A DIFFERENT KIND OF ENERGY</span>
+                    <span class="visual-number">R / 001</span>
+                </div>
+
+                <div class="about-copy">
+                    <p class="eyebrow red">BEHIND THE VOICE</p>
+                    <h2>MORE THAN<br>A <span>VOICE.</span></h2>
+
+                    <p>
+                        Music is more than sound. It's emotion, freedom
+                        and the moments that stay with us long after
+                        the last note.
+                    </p>
+                    <p>
+                        Welcome to my world. A space for music,
+                        creativity and unforgettable experiences.
+                        This is <strong>I AM RINA.</strong>
+                    </p>
+
+                    <a href="#contact" class="underlined-link">LET'S CONNECT <span>↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section music-section" id="music">
+            <div class="section-heading">
+                <span class="section-index">02 / THE SOUND</span>
+                <span class="section-note">♫</span>
+            </div>
+
+            <div class="music-intro">
+                <div>
+                    <p class="eyebrow red">LISTEN CLOSER</p>
+                    <h2>FEEL THE<br><span>MUSIC.</span></h2>
+                </div>
+                <p class="muted">Every song tells a story.<br>Find yours in the sound.</p>
+            </div>
+
+            <article class="music-card">
+                <div class="album-art">
+                    <div class="album-glow"></div>
+                    <div class="album-orbit"></div>
+                    <div class="album-title">RINA<span>.</span></div>
+                    <div class="album-subtitle">THE SOUND OF ME</div>
+                    <div class="album-sticker">NEW<br>SOUND</div>
+                </div>
+
+                <div class="player-info">
+                    <span class="track-tag"><span></span> MUSIC PLAYER</span>
+                    <h3 id="trackTitle">YOUR SONG TITLE</h3>
+                    <p class="track-artist">I AM RINA · SINGLE</p>
+
+                    <div class="audio-player">
+                        <button class="play-button" id="playButton" aria-label="Play music">▶</button>
+
+                        <div class="player-timeline">
+                            <div class="player-progress" id="playerProgress"></div>
+                            <input id="audioSeek" type="range" min="0" max="100" value="0" aria-label="Seek through track">
+                        </div>
+
+                        <span class="audio-time" id="playerTime">0:00</span>
+                    </div>
+
+                    <p class="player-hint" id="playerHint">
+                        Add your MP3 file to start listening.
+                    </p>
+
+                    <!-- Add your song file in the music folder -->
+                    <audio id="rinaAudio" preload="metadata">
+                        <source src="./music/rina-song.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <div class="player-bottom">
+                        <span>01</span>
+                        <span>PRESS PLAY & FEEL IT</span>
+                        <span>♫</span>
+                    </div>
+                </div>
+            </article>
+
+            <div class="music-bottom-line">
+                <span>TURN UP THE VOLUME</span>
+                <span>LET THE MUSIC SPEAK <b>↗</b></span>
+            </div>
+        </section>
+
+        <section class="section gallery-section" id="gallery">
+            <div class="section-heading">
+                <span class="section-index">03 / THE VISUALS</span>
+                <span class="section-decoration">✳</span>
+            </div>
+
+            <div class="gallery-intro">
+                <p class="eyebrow red">BEHIND THE SCENES</p>
+                <h2>MY WORLD.<br><span>YOUR SCREEN.</span></h2>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gallery-item gallery-large">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1100&q=85" alt="Live music performance">
+                    <figcaption><span>01 / LIVE ENERGY</span><b>THE STAGE ↗</b></figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=85" alt="Singer performing on stage">
+                    <figcaption><span>02 / THE ARTIST</span><b>IN FOCUS ↗</b></figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=85" alt="Concert lights and audience">
+                    <figcaption><span>03 / THE MOMENT</span><b>FEEL IT ↗</b></figcaption>
+                </figure>
+            </div>
+            <p class="gallery-note">VISUALS, MEMORIES & EVERYTHING IN BETWEEN.</p>
+        </section>
+
+        <section class="section events-section" id="events">
+            <div class="section-heading">
+                <span class="section-index">04 / LIVE EXPERIENCES</span>
+                <span class="section-decoration">♫</span>
+            </div>
+
+            <p class="eyebrow red">MEET ME THERE</p>
+            <h2>LET'S MAKE<br><span>MEMORIES.</span></h2>
+
+            <div class="event-list">
+                <article class="event">
+                    <div class="event-date"><span>OCT</span><strong>24</strong></div>
+                    <div class="event-details">
+                        <span>LIVE PERFORMANCE</span>
+                        <h3>LIVE IN TALLINN</h3>
+                        <p>TALLINN, ESTONIA</p>
+                    </div>
+                    <span class="event-status">EVENT INFO SOON</span>
+                </article>
+
+                <article class="event">
+                    <div class="event-date"><span>NOV</span><strong>08</strong></div>
+                    <div class="event-details">
+                        <span>ACOUSTIC SESSION</span>
+                        <h3>AN INTIMATE NIGHT</h3>
+                        <p>TALLINN, ESTONIA</p>
+                    </div>
+                    <span class="event-status">EVENT INFO SOON</span>
+                </article>
+            </div>
+
+            <p class="event-disclaimer">Replace these sample events with confirmed performances before publishing.</p>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-glow"></div>
+            <div class="contact-content">
+                <p class="eyebrow">HAVE AN IDEA?</p>
+                <h2>LET'S MAKE<br><span>SOME NOISE.</span></h2>
+                <p>Bookings, collaborations and new beginnings start here.</p>
+                <a class="contact-button" href="mailto:YOUR-EMAIL@example.com">GET IN TOUCH <span>↗</span></a>
+
+                <div class="social-links">
+                    <a href="#" target="_blank" rel="noopener">INSTAGRAM ↗</a>
+                    <a href="#" target="_blank" rel="noopener">YOUTUBE ↗</a>
+                    <a href="#" target="_blank" rel="noopener">TIKTOK ↗</a>
+                </div>
+            </div>
+            <div class="contact-watermark">RINA.</div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="footer-logo">I AM <span>RINA</span><i>.</i></a>
+        <p>INDEPENDENT SPIRIT. ORIGINAL SOUND.</p>
+        <span>© 2026 I AM RINA</span>
     </footer>
-
-
-    <script src="script.js"></script>
-
 </body>
 </html>
